@@ -1,0 +1,40 @@
+{
+  "name": "json-decorator",
+  "version": "1.0.0",
+  "description": "Dynamically generate toJSON serilization method for javascript ES6 classes ;)",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "test": "npm run compile && mocha --compilers js:babel-core/register",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-flowers/json-decorator.git"
+  },
+  "keywords": [
+    "class",
+    "json",
+    "toJSON",
+    "decorator",
+    "serialization",
+    "ES6"
+  ],
+  "author": "Fareed Alnamrouti <digital.flowers@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digital-flowers/json-decorator/issues"
+  },
+  "homepage": "https://github.com/digital-flowers/json-decorator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "mocha": "^3.4.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
+}
