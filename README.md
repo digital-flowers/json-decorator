@@ -10,7 +10,7 @@ very easy to use
 ```javascript
 import json from "json-decorator";
 
-@json("b","d") // pass the property values that you want to ignore
+@json("b","d") // pass the property names that you want to ignore
 class Clazz {
     constructor(a,b,c,d) {
         this.a = a;
